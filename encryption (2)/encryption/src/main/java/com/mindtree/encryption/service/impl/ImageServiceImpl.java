@@ -41,14 +41,26 @@ public class ImageServiceImpl implements ImageService {
 
 
 
+ //   @Override
+ //   public void init() {
+  //      try {
+ //           Files.createDirectory(root);
+ //       } catch (IOException e) {
+  //          throw new RuntimeException("Could not initialize folder for upload!");
+ //       }
+//    }
+    
     @Override
-    public void init() {
-        try {
+public void init() {
+    try {
+        if (!Files.exists(root)) {
             Files.createDirectory(root);
-        } catch (IOException e) {
-            throw new RuntimeException("Could not initialize folder for upload!");
         }
+
+    } catch (IOException e) {
+        throw new RuntimeException("Could not initialize folder for upload!");
     }
+}
 
 
     @Override
