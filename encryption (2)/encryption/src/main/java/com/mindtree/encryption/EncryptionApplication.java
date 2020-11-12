@@ -24,8 +24,8 @@ public class EncryptionApplication implements CommandLineRunner {
 	}
 
 	@Override
-	public void run(String... arg) throws Exception {
-imageService.deleteAll();
+	public void run(String... arg) throws Exception { 
+                //imageService.deleteAll();
 		imageService.init();
 	}
 
