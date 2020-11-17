@@ -35,7 +35,7 @@ public class ImageServiceImpl implements ImageService {
     private static String token=EncryptionDecryption.getAlphaNumericString();
 
     private static String dateTime="";
-    private final Path root = Paths.get("uploads");
+    private final Path root = Paths.get("../uploads");
     private String UPLOADED_FOLDER = root.toAbsolutePath().toString()+"/";
 
 
