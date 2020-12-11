@@ -8,7 +8,7 @@ MAINTAINER Karri Sai
 RUN mkdir -p /usr/src/myapp
 
 # COPY APPLICTAION COde
-COPY myencryption/encryption/target/encryption-0.0.1-SNAPSHOT.jar    /usr/src/myapp
+COPY target/encryption-0.0.1-SNAPSHOT.jar    /usr/src/myapp
 
 # Setup Working DIR
 WORKDIR /usr/src/myapp
